@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Feliz Cumpleaños Danely! ✨🎂</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Three.js para la galaxia 3D -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <!-- Librería para confeti festivo -->
+    <!-- Librería para el efecto de confeti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
-
 <body>
 
+    <!-- Contenedor 3D -->
     <div id="canvas-container"></div>
 
+    <!-- Capa de Interfaz -->
     <div class="ui-layer">
         <div class="header-title">
             <h1>✨ Un Universo para Danely ✨</h1>
@@ -22,9 +23,8 @@
         <button class="btn-carta" id="btnOpen">Abrir Carta de Cumpleaños 💌</button>
     </div>
 
-    <!-- Música de Fondo (Opcional: Reemplaza la URL con tu canción favorita) -->
-    <audio id="bg-music" loop
-        src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73111.mp3?filename=happy-birthday-152061.mp3"></audio>
+    <!-- Audio de Fondo (Enlace directo sin descargas) -->
+    <audio id="bg-music" loop src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3" preload="auto"></audio>
 
     <!-- Animación del Avioncito con Pancarta y Humo -->
     <div id="airplane-container" class="airplane-banner">
@@ -40,10 +40,8 @@
     <div class="modal-overlay" id="modal">
         <div class="modal-card">
             <h2>¡Feliz Cumpleaños, Danely! 🎂✨</h2>
-            <p>Hoy <b>Sábado 26 de Septiembre</b> celebramos tu vida. Quería prepararte algo único y diferente para
-                recordarte lo especial que eres.</p>
-            <p>Que este nuevo año de vida venga lleno de muchas bendiciones, sonrisas, éxitos y momentos inolvidables.
-            </p>
+            <p>Hoy <b>Sábado 26 de Septiembre</b> celebramos tu vida. Quería prepararte algo único y diferente para recordarte lo especial que eres.</p>
+            <p>Que este nuevo año de vida venga lleno de muchas bendiciones, sonrisas, éxitos y momentos inolvidables.</p>
             <p><span class="highlight">¡Espero que te guste este pequeño universo hecho para ti! 🌌💖</span></p>
             <button class="btn-close" id="btnClose">Cerrar y explorar galaxia ✨</button>
         </div>
@@ -51,5 +49,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
