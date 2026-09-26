@@ -198,7 +198,7 @@ window.addEventListener('click', (event) => {
         if (clickedId === 'plane') {
             launchAirplane();
         } else if (clickedId === 'danely') {
-            showToast("¡Que viva la cumpleañera más linda! 🎉💖");
+            showToast("¡Que viva la cumpleañera! 🎉");
         } else if (clickedId === 'cumple') {
             showToast("Espero que la pases super bien hoy y siempre ✨🎂");
         } else if (clickedId === 'date') {
